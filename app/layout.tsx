@@ -36,9 +36,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 <nav className="ml-auto text-sm font-medium space-x-6">
                   <Link href="/">Home</Link>
                   <Link href="/resume">Resume</Link>
-                  {/* Give reason why some projects don't include the github link */}
-                  {/* context, tools used, skills learned, gallery */}
-                  {/* sort by newest */}
                   <Link href="/projects">Projects</Link>
                   <Link href="/contact">Contact Me</Link>
                 </nav>
@@ -53,10 +50,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   logoLight={linkedinLogo}
                   logoDark={linkedinLogo}
                 >
-                  LinkedIn
+                  LinkedIn (you need to change this link here too)
                 </LogoLink>
                 <LogoLink href="https://gitfront.io/r/Bouchard/3fDHMhJpozRM/personal-website/">
-                  source code
+                  source code (this should probably stay as this link with
+                  credit or something)
                 </LogoLink>
                 <LogoLink
                   href="https://github.com/JulianBouchard"
