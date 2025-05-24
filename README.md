@@ -23,30 +23,9 @@ A modern, responsive personal portfolio website showcasing my philosophy backgro
 
 ## 🚀 Getting Started
 
-### Prerequisites
+This website is built with Next.js and requires Node.js 18+ and [pnpm](https://pnpm.io/) package manager for local development.
 
-- Node.js 18+ installed
-- [pnpm](https://pnpm.io/) package manager
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/micahprobst/personal-website.git
-cd personal-website
-```
-
-2. Install dependencies:
-```bash
-pnpm install
-```
-
-3. Start the development server:
-```bash
-pnpm dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+To run locally: `pnpm install` then `pnpm dev` and visit [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Structure
 
