@@ -1,7 +1,15 @@
 {
-  "name": "micahs-website",
-  "version": "0.1.0",
+  "name": "personal-website",
+  "version": "1.0.0",
   "private": true,
+  "description": "Personal portfolio website showcasing philosophy background and AI ethics research",
+  "author": "Micah Probst <micah.probst@colorado.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/micahprobst/personal-website.git"
+  },
+  "homepage": "https://github.com/micahprobst/personal-website#readme",
+  "keywords": ["portfolio", "philosophy", "ai-ethics", "nextjs", "typescript"],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
