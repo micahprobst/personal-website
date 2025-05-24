@@ -43,7 +43,7 @@ export default function Projects() {
       <FilterSelect filter={filter} setFilter={setFilter} />
       {orderedProjects.map((project) => (
         <>
-          <article key={project._id} className="my-12 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-lg p-6 shadow-sm border border-gray-200/50 dark:border-gray-700/50">
+          <article key={project._id} className="my-12 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-lg p-6 shadow-sm border border-gray-200/50 dark:border-gray-700/50 relative z-0">
             <div className="flex justify-between">
               {/* TODO: add links back in once ready */}
               {/* <Link href={project.slug}> */}

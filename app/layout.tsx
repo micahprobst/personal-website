@@ -30,7 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ScrollButton />
           <div className="min-h-screen max-w-2xl mx-auto pt-10 px-4 flex flex-col">
-            <header>
+            <header className="relative z-50">
               <div className="flex items-center justify-between">
                 <ModeToggle />
                 <nav className="ml-auto text-sm font-medium space-x-6">
