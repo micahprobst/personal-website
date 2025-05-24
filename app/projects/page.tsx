@@ -55,6 +55,19 @@ export default function Projects() {
               <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
             </div>
             {project.description && <p>{project.description}</p>}
+            {(project.projectType === 'Personal Research' || project.projectType === 'Research') && (
+              <p>
+                <a
+                  href={project.title === 'AI Sycophancy as an Epistemic Vice' ? '/ai-sycophancy-epistemic-vice copy.pdf' : 
+                        project.title === 'Beyond Binary Understanding' ? '/beyond-binary-understanding copy.pdf' : '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  Read Paper (PDF)
+                </a>
+              </p>
+            )}
             {project.keyWords && <BadgeCollection badges={project.keyWords} />}
           </article>
           <hr />
