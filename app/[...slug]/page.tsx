@@ -15,7 +15,7 @@ async function getPageFromParams(params: PageProps['params']) {
   const page = allPages.find((page) => page.slugAsParams === slug);
 
   if (!page) {
-    null;
+    return null;
   }
 
   return page;
@@ -47,6 +47,7 @@ export default async function PagePage({ params }: PageProps) {
 
   if (!page) {
     notFound();
+    return;
   }
 
   return (

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { Project, allProjects } from '@/.contentlayer/generated';
-import Link from 'next/link';
 import { BadgeCollection } from '@/components/ui/badge';
 import { format } from 'date-fns';
 import FilterSelect from '@/components/ui/filter-select';

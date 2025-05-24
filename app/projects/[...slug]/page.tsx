@@ -17,7 +17,7 @@ async function getPostFromParams(params: PostProps['params']) {
   const project = allProjects.find((project) => project.slugAsParams === slug);
 
   if (!project) {
-    null;
+    return null;
   }
 
   return project;
@@ -49,6 +49,7 @@ export default async function PostPage({ params }: PostProps) {
 
   if (!project) {
     notFound();
+    return;
   }
 
   return (
