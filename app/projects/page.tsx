@@ -55,11 +55,11 @@ export default function Projects() {
               <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
             </div>
             {project.description && <p>{project.description}</p>}
-            {project.projectType === 'Research' && (
+            {(project.projectType === 'Research' || project.projectType === 'Personal Research') && (
               <p>
                 <a
-                  href={project.title === 'AI Sycophancy as an Epistemic Vice' ? '/ai-sycophancy-epistemic-vice copy.pdf' : 
-                        project.title === 'Beyond Binary Understanding' ? '/beyond-binary-understanding copy.pdf' : '#'}
+                  href={project.title === 'The Epistemic Vice of AI Sycophancy' ? '/ai-sycophancy-epistemic-vice copy.pdf' : 
+                        project.title === 'Beyond Binary Understanding: LLMs as Catalysts for Philosophical Recalibration' ? '/beyond-binary-understanding copy.pdf' : '#'}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
