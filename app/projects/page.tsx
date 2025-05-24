@@ -11,6 +11,7 @@ export default function Projects() {
     useState<Project[]>(allProjects);
   const [filter, setFilter] = useState<string[]>([]);
 
+
   useEffect(() => {
     // filter by keywords
     const filteredProjects = allProjects.filter((project) => {
