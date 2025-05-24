@@ -1,6 +1,6 @@
 # Micah Probst - Personal Website
 
-A modern, responsive personal portfolio website showcasing my philosophy background, AI ethics research, and professional work. Built with Next.js, TypeScript, and Tailwind CSS.
+A modern, responsive personal portfolio website showcasing my philosophy background, AI ethics research, and technical work. Built with Next.js, TypeScript, and Tailwind CSS.
 
 ## 🌟 Features
 
@@ -21,11 +21,8 @@ A modern, responsive personal portfolio website showcasing my philosophy backgro
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Analytics**: [Vercel Analytics](https://vercel.com/analytics)
 
-## 🚀 Getting Started
 
-This website is built with Next.js and requires Node.js 18+ and [pnpm](https://pnpm.io/) package manager for local development.
-
-To run locally: `pnpm install` then `pnpm dev` and visit [http://localhost:3000](http://localhost:3000)
+This website is built with Next.js and requires Node.js 18+ 
 
 ## 📁 Project Structure
 
@@ -42,70 +39,6 @@ To run locally: `pnpm install` then `pnpm dev` and visit [http://localhost:3000]
 ├── lib/               # Utility functions
 └── public/            # Static assets
 ```
-
-## 📝 Content Management
-
-Content is managed through MDX files in the `content/` directory:
-
-- **Pages**: Located in `content/pages/` for static pages
-- **Projects**: Located in `content/projects/` for project showcases
-
-Each content file includes frontmatter for metadata:
-
-```yaml
----
-title: "Page Title"
-description: "Page description for SEO"
-date: "2024-01-01"
----
-```
-
-## 🎨 Customization
-
-### Adding New Projects
-
-1. Create a new `.mdx` file in `content/projects/`
-2. Add frontmatter with title, description, date, and keywords
-3. Write your content using Markdown and React components
-
-### Styling
-
-The project uses Tailwind CSS for styling. Customize the theme in `tailwind.config.js`:
-
-- Colors
-- Typography
-- Spacing
-- Breakpoints
-
-## 📊 Analytics
-
-The site includes Vercel Analytics for performance and visitor tracking. Analytics data helps optimize user experience and content strategy.
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-1. Connect your GitHub repository to [Vercel](https://vercel.com)
-2. Import the project
-3. Deploy with default settings
-4. Your site will be live with automatic deployments on push
-
-### Alternative Deployment
-
-The site can be deployed to any platform that supports Node.js:
-
-```bash
-pnpm build
-pnpm start
-```
-
-## 📜 Available Scripts
-
-- `pnpm dev`: Start development server
-- `pnpm build`: Build for production
-- `pnpm start`: Start production server
-- `pnpm preview`: Build and start production server
-- `pnpm lint`: Run ESLint
 
 ## 🤝 Contributing
 
@@ -129,7 +62,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **Email**: micah.x.probst@gmail.com
 - **LinkedIn**: [Micah Probst](https://www.linkedin.com/in/micah-probst-b80009172/)
-- **GitHub**: [MicahProbst](https://github.com/micahprobst)
+- **GitHub**: [micahprobst](https://github.com/micahprobst)
 
 ---
 
