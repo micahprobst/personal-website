@@ -53,8 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   LinkedIn
                 </LogoLink>
                 <LogoLink href="https://gitfront.io/r/Bouchard/3fDHMhJpozRM/personal-website/">
-                  source code (this should probably stay as this link with
-                  credit or something)
+                  source code (Julian Bouchard)
                 </LogoLink>
                 <LogoLink
                   href="https://github.com/micahprobst"
