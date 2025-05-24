@@ -39,41 +39,39 @@ export default function Projects() {
   }, [filter]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 -mx-8 -mt-8 px-8 pt-8">
-      <div className="max-w-4xl mx-auto">
-        <FilterSelect filter={filter} setFilter={setFilter} />
-        {orderedProjects.map((project) => (
-          <>
-            <article key={project._id} className="my-12 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-lg p-6 shadow-sm border border-gray-200/50 dark:border-gray-700/50">
-              <div className="flex justify-between">
-                {/* TODO: add links back in once ready */}
-                {/* <Link href={project.slug}> */}
-                <h2 className="m-0">{project.title}</h2>
-                {/* </Link> */}
-                {/* <Badge badgeColor={tagToColor(project.projectType)}>
-                {project.projectType}
-              </Badge> */}
-                <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
-              </div>
-              {project.description && <p>{project.description}</p>}
-              {project.projectType === 'Research' && (
-                <p>
-                  <a
-                    href={project.title === 'The Epistemic Vice of AI Sycophancy' ? '/ai-sycophancy-epistemic-vice copy.pdf' : 
-                          project.title === 'Beyond Binary Understanding: LLMs as Catalysts for Philosophical Recalibration' ? '/beyond-binary-understanding copy.pdf' : '#'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
-                  >
-                    Read Paper (PDF)
-                  </a>
-                </p>
-              )}
-              {project.keyWords && <BadgeCollection badges={project.keyWords} />}
-            </article>
-          </>
-        ))}
-      </div>
-    </div>
+    <>
+      <FilterSelect filter={filter} setFilter={setFilter} />
+      {orderedProjects.map((project) => (
+        <>
+          <article key={project._id} className="my-12 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-lg p-6 shadow-sm border border-gray-200/50 dark:border-gray-700/50">
+            <div className="flex justify-between">
+              {/* TODO: add links back in once ready */}
+              {/* <Link href={project.slug}> */}
+              <h2 className="m-0">{project.title}</h2>
+              {/* </Link> */}
+              {/* <Badge badgeColor={tagToColor(project.projectType)}>
+              {project.projectType}
+            </Badge> */}
+              <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
+            </div>
+            {project.description && <p>{project.description}</p>}
+            {project.projectType === 'Research' && (
+              <p>
+                <a
+                  href={project.title === 'The Epistemic Vice of AI Sycophancy' ? '/ai-sycophancy-epistemic-vice copy.pdf' : 
+                        project.title === 'Beyond Binary Understanding: LLMs as Catalysts for Philosophical Recalibration' ? '/beyond-binary-understanding copy.pdf' : '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                >
+                  Read Paper (PDF)
+                </a>
+              </p>
+            )}
+            {project.keyWords && <BadgeCollection badges={project.keyWords} />}
+          </article>
+        </>
+      ))}
+    </>
   );
 }
