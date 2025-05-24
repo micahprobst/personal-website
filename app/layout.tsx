@@ -13,8 +13,8 @@ import linkedinLogo from '@/public/linkedin-logo.svg';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Micah's Website",
-  description: 'A personal website to showcase my work and projects.',
+  title: "Micah Probst - Philosophy & AI Ethics",
+  description: 'Recent CU Boulder philosophy graduate focused on responsible AI development and ethical technology.',
 };
 
 interface RootLayoutProps {
@@ -46,18 +46,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <hr />
               <div className="flex justify-between py-4 text-sm">
                 <LogoLink
-                  href="https://linkedin.com/in/julian-bouchard"
+                  href="https://www.linkedin.com/in/micah-probst-b80009172/"
                   logoLight={linkedinLogo}
                   logoDark={linkedinLogo}
                 >
-                  LinkedIn (you need to change this link here too)
+                  LinkedIn
                 </LogoLink>
                 <LogoLink href="https://gitfront.io/r/Bouchard/3fDHMhJpozRM/personal-website/">
                   source code (this should probably stay as this link with
                   credit or something)
                 </LogoLink>
                 <LogoLink
-                  href="https://github.com/JulianBouchard"
+                  href="https://github.com/micahprobst"
                   logoLight={gitHubLogoLight}
                   logoDark={gitHubLogoDark}
                 >
