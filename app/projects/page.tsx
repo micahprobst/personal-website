@@ -55,7 +55,7 @@ export default function Projects() {
               <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
             </div>
             {project.description && <p>{project.description}</p>}
-            {(project.projectType === 'Personal Research' || project.projectType === 'Research') && (
+            {project.projectType === 'Research' && (
               <p>
                 <a
                   href={project.title === 'AI Sycophancy as an Epistemic Vice' ? '/ai-sycophancy-epistemic-vice copy.pdf' : 
