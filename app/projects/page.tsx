@@ -28,6 +28,10 @@ export default function Projects() {
     // sort by date
     setOrderedProjects(
       filteredProjects.sort((a, b) => {
+        // Handle WIP dates - put them at the top
+        if (a.date === 'WIP' && b.date === 'WIP') return 0;
+        if (a.date === 'WIP') return -1;
+        if (b.date === 'WIP') return 1;
         return new Date(b.date).getTime() - new Date(a.date).getTime();
       })
     );
@@ -47,7 +51,7 @@ export default function Projects() {
               {/* <Badge badgeColor={tagToColor(project.projectType)}>
               {project.projectType}
             </Badge> */}
-              <span>{format(new Date(project.date), 'MM/yyyy')}</span>
+              <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
             </div>
             {project.description && <p>{project.description}</p>}
             {project.keyWords && <BadgeCollection badges={project.keyWords} />}
