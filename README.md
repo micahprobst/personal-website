@@ -117,9 +117,9 @@ This is a personal portfolio project, but suggestions and feedback are welcome! 
 
 ## 🙏 Acknowledgments
 
-**Special thanks to [Julian Bouchard](https://github.com/JulianBouchard)** for creating the original website template and codebase that serves as the foundation for this site. The clean, modern design and technical architecture provided an excellent starting point for showcasing philosophy and AI ethics work.
+**Special thanks to my friend [Julian Bouchard](https://github.com/JulianBouchard)** for creating the original website template and codebase that serves as the foundation for this site. The clean, modern design and technical architecture provided an excellent starting point for showcasing philosophy and AI ethics work.
 
-While I've customized the content, styling, and functionality to reflect my own work and interests, the core structure and many design decisions originated from Julian's thoughtful implementation. This kind of open sharing of quality code makes the web development community stronger.
+While I've customized the content, styling, and functionality to reflect my own work and interests, the core structure and many design decisions originated from Julian's thoughtful implementation.
 
 ## 📄 License
 
@@ -127,7 +127,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Email**: micah.probst@colorado.edu
+- **Email**: micah.x.probst@gmail.com
 - **LinkedIn**: [Micah Probst](https://www.linkedin.com/in/micah-probst-b80009172/)
 - **GitHub**: [MicahProbst](https://github.com/micahprobst)
 
