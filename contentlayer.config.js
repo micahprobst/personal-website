@@ -56,7 +56,7 @@ export const Project = defineDocumentType(() => ({
     },
     projectType: {
       type: "enum",
-      options: ["Personal", "Class", "Start Up", "Research"],
+      options: ["Personal", "Class", "Start Up", "Research", "Personal Writing", "Learning Project", "Personal Project"],
       default: "Personal",
     },
     keyWords: {
