@@ -136,6 +136,12 @@ This is a personal portfolio project, but suggestions and feedback are welcome! 
 2. Submit a pull request for improvements
 3. Share feedback on design or content
 
+## 🙏 Acknowledgments
+
+**Special thanks to [Julian Bouchard](https://github.com/JulianBouchard)** for creating the original website template and codebase that serves as the foundation for this site. The clean, modern design and technical architecture provided an excellent starting point for showcasing philosophy and AI ethics work.
+
+While I've customized the content, styling, and functionality to reflect my own work and interests, the core structure and many design decisions originated from Julian's thoughtful implementation. This kind of open sharing of quality code makes the web development community stronger.
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
@@ -148,4 +154,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Built with ❤️ by Micah Probst | Powered by Next.js and Vercel
+Built with ❤️ by Micah Probst | Based on original template by Julian Bouchard | Powered by Next.js and Vercel

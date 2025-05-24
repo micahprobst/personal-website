@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Projects',
-    description: "A list of projects I've worked on",
+    description: "A list of projects I've worked on or am working on.",
   };
 }
 
