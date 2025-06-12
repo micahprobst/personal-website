@@ -25,7 +25,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`antialiased min-h-screen bg-gradient-to-br from-teal-100 via-cyan-50 to-slate-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 text-slate-900 dark:text-slate-50 ${inter.className}`}
+        className={`antialiased min-h-screen bg-gradient-to-br from-philosophy-teal-100 via-philosophy-beige-50 to-philosophy-purple-50 dark:from-gray-900 dark:via-philosophy-purple-900 dark:to-slate-900 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <ScrollButton />
@@ -52,8 +52,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 >
                   LinkedIn
                 </LogoLink>
-                <LogoLink href="https://gitfront.io/r/Bouchard/3fDHMhJpozRM/personal-website/">
-                  source code (Julian Bouchard)
+                <LogoLink href="https://github.com/micahprobst/personal-website">
+                  Source Code
                 </LogoLink>
                 <LogoLink
                   href="https://github.com/micahprobst"
