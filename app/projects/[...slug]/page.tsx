@@ -53,7 +53,7 @@ export default async function PostPage({ params }: PostProps) {
   }
 
   return (
-    <article className="py-6 prose dark:prose-invert max-w-none">
+    <article className="py-6 prose dark:prose-invert max-w-none bg-transparent">
       <div className="flex justify-between">
         <h1 className="font-medium text-3xl mb-0">{project.title}</h1>
         <span>{project.date === 'WIP' ? 'WIP' : format(new Date(project.date), 'MM/yyyy')}</span>
